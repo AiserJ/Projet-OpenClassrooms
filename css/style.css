@@ -13,6 +13,10 @@
     color: var(--main-color);
 }
 
+.fa-location-dot {
+    color: black;
+}
+
 .fa-stack-1x {
     line-height: inherit;
     color: #0065FC;
@@ -29,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-right: 20px;
     padding: 5px;
 }
 
@@ -56,7 +61,6 @@ nav {
 }
 
 nav ul{
-    position : fixed;
     list-style: none;
     top: 15px;
     right: 0;
@@ -310,6 +314,7 @@ a {
 
 .populaires-cards img {
     width: 33%;
+    object-fit: cover;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -361,7 +366,7 @@ a {
 }
 
 .section-activite {
-    width: 90%;
+    width: 95%;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 30px;
@@ -373,6 +378,28 @@ a {
     transition: transform 0.3s ease-in-out;
 }
 
+footer {
+    display: flex;
+    margin-left: 30px;
+}
+
+/****** Footer ***********/
+
+.info-site {
+    display: flex;
+    width: 99%;
+    background-color: var(--main-bg-color);
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -381,6 +408,40 @@ a {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    .activites-marseille{
+        width: 92%;
+    }
+
+    .hebergements-marseille{
+        padding-bottom: 20px;
+    }
+    
+    .nom-hotel{
+        font-size: 15px;
+    }
+
+    .prix{
+
+    }
+    .card-arti{
+        width: 22%;
+    }
+
+    .card-activite {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .activite-img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .activite-text {
+        width: 100%;
+        font-size: 12px;
     }
 
     .hebergements {
@@ -412,6 +473,69 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 900px) {
+    .nav-bar {
+    
+    }
+
+    .logo {
+
+    }
+
+    h1 {
+        display: flex;
+        width: 50%;
+        font-size: 22px;
+    }
+
+    header {
+        padding-left: 20px;
+
+    }
+
+    .search-section {
+
+    }
+
+    .search-bar {
+
+    }
+
+    .search-btn {
+
+    }
+
+    .info-logements {
+        width: 50%;
+        display: flex;
+    }
+
+    .populaires {
+        order: 1;
+        margin: 0px;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-and-populaires {
+        margin: 0px;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+
+    .section-title {
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+
+    .hebergements {
+        order: 2;
+    }
 }
