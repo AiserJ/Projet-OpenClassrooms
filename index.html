@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +32,13 @@
                 </div>
                 <input type="text" placeholder="Ville, Pays" class="destination">
                 <button class="search-btn" type="submit">Rechercher</button>
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+                    <path d="M21 21l-4.35-4.35m1.18-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
             </div>
             <article>
+                <span class="filtres">Filtres</span>
                 <div class="filters">
-                    <span class="filtres">Filtres</span>
                     <button class="filter-btn"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
                     <button class="filter-btn"><i class="fa-solid fa-child"></i>Familial</button>
                     <button class="filter-btn"><i class="fa-solid fa-heart"></i>Romantique</button>
@@ -168,7 +171,7 @@
                         </div>
                 </section>
 
-                <section class="populaires">
+                <div class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -232,7 +235,7 @@
                             </article>
                         </a>
                     </div>
-                </section>
+                </div>
             </div>
         </main>
         <section class="section-activite">

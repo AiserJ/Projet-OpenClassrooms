@@ -299,6 +299,10 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .populaires-title {
@@ -400,6 +404,10 @@ footer {
     margin-right: 20px;
 }
 
+.btn-icon {
+    display: none;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -408,6 +416,8 @@ footer {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .activites-marseille{
@@ -422,9 +432,6 @@ footer {
         font-size: 15px;
     }
 
-    .prix{
-
-    }
     .card-arti{
         width: 22%;
     }
@@ -442,6 +449,7 @@ footer {
     .activite-text {
         width: 100%;
         font-size: 12px;
+        padding-left: 10px;
     }
 
     .hebergements {
@@ -470,49 +478,98 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    footer {
+        
+    }
+
+    .btn-icon {
+        display: none;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 900px) {
-    .nav-bar {
-    
+    @media (max-width: 767px) {
+
+
+    body {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .logo {
+        padding-left: 130px;
+    }
 
+    nav {
+        flex-wrap: wrap;
     }
 
     h1 {
         display: flex;
-        width: 50%;
+        width: 90%;
         font-size: 22px;
     }
 
     header {
-        padding-left: 20px;
-
-    }
-
-    .search-section {
-
+        display: flex;
+        padding-left: 10px;
+        margin-top: 100px;
     }
 
     .search-bar {
+        margin-left: 10px;
+    }
 
+    .destination{
+        width: 250px;
     }
 
     .search-btn {
+        display: none;
+    }
 
+    .btn-icon {
+        display: flex;
+        border: 0px;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px; 
+        cursor: pointer;
+        background-color: var(--main-color);
+        color: white;
+        font-weight: bold;
+    }
+
+    .filtres {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    .filter-btn {
+        display: flex;
+        width: 40%;
     }
 
     .info-logements {
-        width: 50%;
+        width: 90%;
         display: flex;
     }
 
     .populaires {
         order: 1;
         margin: 0px;
+        padding-top: 20px;
+        padding-left: 20px;
+        background-color: #F2F2F2;
+        border-radius: 0px;
     }
 
     .populaires-cards {
@@ -521,21 +578,84 @@ footer {
         flex-direction: column;
     }
 
+    .populaires-cards a {
+        display: flex;
+        width: 100%;
+    }
+
+    .populaires-cards .card-content {
+        width: 67%;
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hebergement {
+        order: 2;
+    }
+
     .hebergements-and-populaires {
         margin: 0px;
     }
 
-    .card {
-        width: 300px;
-    }
-
-
     .section-title {
-        padding-bottom: 0px;
+        padding-bottom: 10px;
         margin: 0px;
     }
 
-    .hebergements {
+    .hebergements-and-populaires section {
         order: 2;
+        background-color: white;
+        padding-left: 0px;
+    }
+
+    .hebergement-total {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding-left: 10px;
+    }
+
+    .hebergements-marseille {
+        width: 100%;
+    }
+
+    .section-activite {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .activites-marseille {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-arti {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    footer {
+        margin-left: 0px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-site {
+        display: flex;
+        width: 100%;
     }
 }
