@@ -495,34 +495,55 @@ footer {
     body {
         margin-left: 0px;
         margin-right: 0px;
+        padding: 0px;
     }
 
     .logo {
-        padding-left: 130px;
+        padding-left: 150px;
+    }
+
+    .nav-bar {
+        padding-right: 60px;
+        padding-left: 60px;
     }
 
     nav {
         flex-wrap: wrap;
+        padding: 0px;
     }
 
     h1 {
         display: flex;
         width: 90%;
         font-size: 22px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
     header {
         display: flex;
         padding-left: 10px;
+        padding-right: 10px;
         margin-top: 100px;
+        width: 95%;
+    }
+
+    .centre-ville {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .search-bar {
-        margin-left: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .destination{
         width: 250px;
+    }
+
+    .fa-stack {
+        width: 5%
     }
 
     .search-btn {
@@ -542,8 +563,7 @@ footer {
 
     .filtres {
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px;
     }
 
     .filters {
@@ -555,7 +575,12 @@ footer {
 
     .filter-btn {
         display: flex;
-        width: 40%;
+        width: 45%;
+    }
+
+    .info-container {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .info-logements {
@@ -612,14 +637,14 @@ footer {
     .hebergements-and-populaires section {
         order: 2;
         background-color: white;
-        padding-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .hebergement-total {
         display: flex;
         flex-direction: column;
         width: 95%;
-        padding-left: 10px;
     }
 
     .hebergements-marseille {
@@ -627,8 +652,8 @@ footer {
     }
 
     .section-activite {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .activites-marseille {
@@ -640,9 +665,8 @@ footer {
     .card-arti {
         display: flex;
         flex-direction: column;
-        width: 95%;
+        width: 100%;
         margin-bottom: 20px;
-        margin-left: 10px;
     }
 
     footer {
