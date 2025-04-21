@@ -124,7 +124,12 @@ p {
 .filtres {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-weight: bold;
+}
+
+.filtres-tt {
+    display: flex;
 }
 
 .search-section {
@@ -174,6 +179,7 @@ p {
 
 .filtres {
     display: flex;
+    padding-right: 10px;
 }
 
 .filters-section {
@@ -479,12 +485,31 @@ footer {
         font-size: 13px;
     }
 
-    footer {
-        
-    }
 
     .btn-icon {
         display: none;
+    }
+
+    .filtres-tt{
+        display: block;
+    }
+
+    .filtres {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding-left: 0px;
+    }
+    
+    .logo {
+        padding: 0px;
+    }
+    nav {
+        padding: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -498,18 +523,37 @@ footer {
         padding: 0px;
     }
 
-    .logo {
-        padding-left: 150px;
+    .logo-containeur {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-bar {
-        padding-right: 60px;
-        padding-left: 60px;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     nav {
         flex-wrap: wrap;
         padding: 0px;
+    }
+
+    .nav-item a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+        display: flex;
+    }
+
+    .nav-bar a:hover {
+        color: var(--main-color);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
     }
 
     h1 {
@@ -524,7 +568,7 @@ footer {
         display: flex;
         padding-left: 10px;
         padding-right: 10px;
-        margin-top: 100px;
+        margin-top: 75px;
         width: 95%;
     }
 
@@ -563,6 +607,7 @@ footer {
 
     .filtres {
         display: flex;
+        justify-content: none;
         margin: 20px;
     }
 
@@ -571,6 +616,10 @@ footer {
         flex-wrap: wrap;
         margin-top: 0px;
         justify-content: center;
+    }
+
+    .filtres-tt{
+        display: block;
     }
 
     .filter-btn {
