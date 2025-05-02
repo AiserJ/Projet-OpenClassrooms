@@ -20,8 +20,8 @@
             <img src="images/logo/Booki.png" alt="Logo Booki" class="logo">
         </div>
         <ul class="nav-bar">
-            <li class="nav-item"><a href="#">Hébergements</a></li>
-            <li class="nav-item"><a href="#">Activités</a></li>
+            <li class="nav-item"><a href="#hebergement">Hébergements</a></li>
+            <li class="nav-item"><a href="#activite">Activités</a></li>
         </ul>
     </nav>
     <header class="search-section">
@@ -31,11 +31,9 @@
                 <div class="localisation">
                     <i class="fa-duotone fa-solid fa-location-dot"></i>
                 </div>
-                <input type="text" placeholder="Ville, Pays" class="destination">
+                <input type="text" placeholder="Marseille, France" class="destination">
                 <button class="search-btn" type="submit">Rechercher</button>
-                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-                    <path d="M21 21l-4.35-4.35m1.18-5.15a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" fill="none"/>
-                </svg>
+                <i class="fa-solid fa-magnifying-glass btn-icon"></i>
             </div>
             <article>
                 <div class="filtres-tt">
@@ -59,7 +57,7 @@
         <main class="main-container">
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 id="hebergement" class="section-title">Hébergements à Marseille</h2>
                         <div class="hebergement-total">
                             <div class="hebergements-marseille">
                                 <a href="#">
@@ -241,7 +239,7 @@
             </div>
         </main>
         <section class="section-activite">
-            <h2>Activités à Marseille</h2>
+            <h2 id="activite">Activités à Marseille</h2>
             <div class="activites-marseille">
                 <article class="card-arti">
                     <a href="#">
@@ -278,7 +276,7 @@
                         <div class="card-activite">
                         <img src="./images/activites/florian-wehde.jpg" alt="Notre Dame de la Garde" class="activite-img">
                             <div class="activite-text">
-                                <h3>Notre Dame De La Garde</h3>
+                                <h3>Notre-Dame-De-La-Garde</h3>
                             </div>
                         </div>
                     </a>
