@@ -169,6 +169,8 @@ p {
     border-left: none;
     border-width: thin;
     border-color: #ccc;
+    border-top: none;
+    border-top: thin solid #ccc;
 }
 
 .search-btn {
