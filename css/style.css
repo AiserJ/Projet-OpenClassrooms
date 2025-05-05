@@ -438,7 +438,7 @@ footer {
     }
 
     h3{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .activites-marseille{
@@ -634,7 +634,6 @@ footer {
 
     .filtres {
         display: flex;
-        justify-content: none;
         margin: 20px;
     }
 
